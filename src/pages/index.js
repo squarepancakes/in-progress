@@ -4,8 +4,11 @@ import Layout from "../components/layout"
 export default function Home() {
   return (
     <Layout>
-      <h1>Hi! I'm building a fake Gatsby site as part of a tutorial</h1>
-      <p>What should I write here? No idea.</p>
+      <h1>Thanks for visiting, we're currently in the midst of renovation.</h1>
+      <p>
+        In the meantime, feel free to reach out to us via our email or contact
+        form.
+      </p>
     </Layout>
   )
 }
