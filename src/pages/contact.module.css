@@ -1,0 +1,15 @@
+.form-field {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.input-width {
+  width: 70%;
+  min-width: 6rem;
+}
+
+.msg-box {
+  width: 70%;
+  height: 10rem;
+}

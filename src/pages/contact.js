@@ -1,5 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
+import styles from "./contact.module.css"
 
 export default function Contact() {
   return (
@@ -20,33 +21,28 @@ export default function Contact() {
         >
           <input type="hidden" name="form-name" value="Contact Form" />
 
-          <div>
-            <label htmlFor="name">
-              Name:
-              <input name="name" />
-            </label>
+          <div className={styles.formField}>
+            <label htmlFor="name">Name:</label>
+            <input className={styles.inputWidth} name="name" />
           </div>
-          <div>
-            <label htmlFor="email">
-              Your Email:
-              <input type="email" name="email" />
-            </label>
+
+          <div className={styles.formField}>
+            <label htmlFor="email">Your Email:</label>
+            <input className={styles.inputWidth} type="email" name="email" />
           </div>
-          <div>
-            <label htmlFor="enquiryType">
-              Type of Enquiry:
-              <select name="enquiry type">
-                <option value="General Enquiry">General Enquiry</option>
-                <option value="Renovation">Renovation</option>
-                <option value="Partnerships">Partnerships</option>
-              </select>
-            </label>
+
+          <div className={styles.formField}>
+            <label htmlFor="enquiryType">Type of Enquiry:</label>
+            <select className={styles.inputWidth} name="enquiry type">
+              <option value="General Enquiry">General Enquiry</option>
+              <option value="Renovation">Renovation</option>
+              <option value="Partnerships">Partnerships</option>
+            </select>
           </div>
-          <div>
-            <label htmlFor="message">
-              Message:
-              <textarea name="message" />
-            </label>
+
+          <div className={styles.formField}>
+            <label htmlFor="message">Message:</label>
+            <textarea className={styles.msgBox} name="message" />
           </div>
 
           <button type="submit">Send</button>
